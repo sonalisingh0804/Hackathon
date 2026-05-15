@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Users</title>
+</head>
+<body>
+
+<h2 align="center">Registered Students</h2>
+
+<table border="1" align="center">
+<tr>
+<th>Name</th>
+<th>DOB</th>
+<th>Gender</th>
+<th>Email</th>
+<th>Mobile</th>
+<th>Course</th>
+<th>Action</th>
+</tr>
+
+<tbody id="userTable"></tbody>
+
+</table>
+
+<script>
+function loadUsers() {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let table = document.getElementById("userTable");
+
+    table.innerHTML = "";
+
+    users.forEach((user, index) => {
+        table.innerHTML += `
+        <tr>
+        <td>${user.name}</td>
+        <td>${user.dob}</td>
+        <td>${user.gender}</td>
+        <td>${user.email}</td>
+        <td>${user.mobile}</td>
+        <td>${user.course}</td>
+        <td><button onclick="deleteUser(${index})">Delete</button></td>
+        </tr>`;
+    });
+}
+
+function deleteUser(index) {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    users.splice(index, 1);
+    localStorage.setItem("users", JSON.stringify(users));
+    loadUsers();
+}
+
+loadUsers();
+</script>
+
+</body>
+</html>
