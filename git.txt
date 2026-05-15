@@ -1,0 +1,28 @@
+C:\Users\mukta>git --version
+git version 2.52.0.windows.1
+
+git config --global user.name "muktaimarathe123-ux"
+
+git config --global user.email "muktaimarathe123@gmail.com"
+
+git config --list
+
+user.name=muktaimarathe123-ux
+user.email=muktaimarathe123@gmail.com
+
+cd C:\Users\mukta\OneDrive\Desktop\Ang2c\User-auth-app
+
+git init
+
+>git status
+
+>git add .
+
+>git commit -m "Initial Angular project"
+
+
+>git remote add origin https://github.com/muktaimarathe123-ux/User-Auth.git
+
+>git branch -M main
+
+>git push -u origin main
