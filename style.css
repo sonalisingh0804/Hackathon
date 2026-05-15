@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(to right, #e0f7fa, #f1f8ff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center forms properly */
+#loginSection, #signupSection {
+    min-height: 90vh;
+}
+
+/* Gradient heading */
+.text-gradient {
+    background: linear-gradient(to right, #00bfa5, #1e88e5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Buttons */
+.btn-custom {
+    background: linear-gradient(to right, #00bfa5, #1e88e5);
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-custom {
+    border: 2px solid #00bfa5;
+    color: #00bfa5;
+    border-radius: 8px;
+}
+
+.btn-outline-custom:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+/* Form Card (CENTER FOCUS) */
+.form-card {
+    width: 360px;
+    border-radius: 15px;
+    border: none;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    background: white;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(to bottom, #00bfa5, #1e88e5);
+    height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(6px);
+}
+
+/* Welcome Card */
+.welcome-card {
+    background: linear-gradient(to right, #00bfa5, #1e88e5);
+    border-radius: 15px;
+    border: none;
+}
+
+/* === COLORFUL STAT CARDS === */
+.stat-card {
+    border-radius: 15px;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+/* Individual colors */
+.project-card {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.task-card {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.attendance-card {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+/* Hover effect */
+.stat-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Icons */
+.icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
